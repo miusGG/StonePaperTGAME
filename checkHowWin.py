@@ -9,7 +9,7 @@ combos = {
 }
 
 
-def check(my_card, en_card): # функция по проверке выигроша
+def check(my_card, en_card):  # функция по проверке выигроша
     if combos[my_card] == en_card:
         return True
     else:
