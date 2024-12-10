@@ -1,14 +1,16 @@
+# файл для проверки ПОБЕДИЛ\ПРОИГРАЛ
+# словарь формата победитель:проигравший
 combos = {
-    "rock" : "paper",
-    "paper" : "scissors",
-    "scissors" : "rock"
+    "rock": "scissors",
+    "paper": "rock",
+    "scissors": "paper",
+    "axe": "paper",
+    "picaxe": "rock"
 }
 
 
-def check(my_card, en_card):
+def check(my_card, en_card): # функция по проверке выигроша
     if combos[my_card] == en_card:
-        return False
-    elif combos[en_card] == my_card:
         return True
     else:
-        return 0
+        return False
